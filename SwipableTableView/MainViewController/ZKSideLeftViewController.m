@@ -6,8 +6,13 @@
 //
 
 #import "ZKSideLeftViewController.h"
+#import <RESideMenu.h>
 
 @interface ZKSideLeftViewController ()
+{
+    NSArray *titles ;
+    
+}
 
 @end
 
@@ -16,11 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.tableView.bounces = NO;
+    titles = @[@"技术", @"软件", @"博客", @"设置", @"注销"];
+    //self.tableView.backgroundColor = [UIColor colorWithHex:0xf6f6f6];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,70 +34,69 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 5;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [UITableViewCell new];
     
-    // Configure the cell...
+    cell.backgroundColor = [UIColor clearColor];
+    
+    UIView *selectedBackground = [UIView new];
+    //selectedBackground.backgroundColor = [UIColor colorWithHex:0xCFCFCF];
+    [cell setSelectedBackgroundView:selectedBackground];
+    
+    cell.imageView.image = [UIImage imageNamed:@[@"sidemenu_QA", @"sidemenu-software", @"sidemenu_blog", @"sidemenu_setting", @"sidemenu-night"][indexPath.row]];
+    cell.textLabel.text = titles[indexPath.row];
+    
+//    if (((AppDelegate *)[UIApplication sharedApplication].delegate).inNightMode){
+//        cell.textLabel.textColor = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1.0];
+//        if (indexPath.row == 4) {
+//            cell.textLabel.text = @"日间模式";
+//            cell.imageView.image = [UIImage imageNamed:@"sidemenu-day"];
+//        }
+//    } else {
+//        cell.textLabel.textColor = [UIColor colorWithHex:0x555555];
+//        if (indexPath.row == 4) {
+//            cell.textLabel.text = @"夜间模式";
+//            cell.imageView.image = [UIImage imageNamed:@"sidemenu-night"];
+//        }
+//    }
+    cell.textLabel.font = [UIFont systemFontOfSize:19];
+    
+    cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
+    //cell.selectedBackgroundView.backgroundColor = [UIColor selectCellSColor];
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString *title = titles[indexPath.row];
+    UIViewController *controller = [UIViewController new];
+    controller.title = title;
+    [self setContentViewController:controller];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+
+- (void)setContentViewController:(UIViewController *)viewController
+{
+    viewController.hidesBottomBarWhenPushed = YES;
+    UINavigationController *nav = (UINavigationController *)((UITabBarController *)self.sideMenuViewController.contentViewController).selectedViewController;
+    //UIViewController *vc = nav.viewControllers[0];
+    //vc.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleBordered target:nil action:nil];
+    [nav pushViewController:viewController animated:NO];
+    
+    [self.sideMenuViewController hideMenuViewController];
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

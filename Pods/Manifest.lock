@@ -1,0 +1,16 @@
+PODS:
+  - RESideMenu (4.0.7)
+
+DEPENDENCIES:
+  - RESideMenu
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RESideMenu
+
+SPEC CHECKSUMS:
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
+
+PODFILE CHECKSUM: af6e68e21843a975528f4c9d03d4ae36691b1d09
+
+COCOAPODS: 1.5.3

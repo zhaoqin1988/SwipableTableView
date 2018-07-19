@@ -7,25 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		374173BFE036CAFB1E1F8256 /* libPods-SwipableTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A23A1A20A8712DDA161E4B /* libPods-SwipableTableView.a */; };
 		FEA6A35820FF1CE3004A3221 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A35720FF1CE3004A3221 /* AppDelegate.m */; };
-		FEA6A35B20FF1CE3004A3221 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A35A20FF1CE3004A3221 /* ViewController.m */; };
 		FEA6A35E20FF1CE3004A3221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA6A35C20FF1CE3004A3221 /* Main.storyboard */; };
 		FEA6A36020FF1CF2004A3221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA6A35F20FF1CF2004A3221 /* Assets.xcassets */; };
 		FEA6A36320FF1CF2004A3221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA6A36120FF1CF2004A3221 /* LaunchScreen.storyboard */; };
 		FEA6A36620FF1CF2004A3221 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A36520FF1CF2004A3221 /* main.m */; };
+		FEA6A36F20FF21C6004A3221 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A36E20FF21C6004A3221 /* RootViewController.m */; };
+		FEA6A37920FF2C2D004A3221 /* ZKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A37820FF2C2D004A3221 /* ZKTabBarController.m */; };
+		FEA6A37C20FF2CA5004A3221 /* ZKSideLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A37B20FF2CA5004A3221 /* ZKSideLeftViewController.m */; };
+		FEA6A37F20FF33BC004A3221 /* HorizonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A37E20FF33BC004A3221 /* HorizonalTableViewController.m */; };
+		FEA6A38220FF33D5004A3221 /* TitleBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A38120FF33D5004A3221 /* TitleBarView.m */; };
+		FEA6A38520FF33F7004A3221 /* SwipableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A38420FF33F7004A3221 /* SwipableViewController.m */; };
+		FEA6A38920FF36CE004A3221 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A38820FF36CE004A3221 /* UIColor+Util.m */; };
+		FEA6A38C21001D2E004A3221 /* SyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A38B21001D2E004A3221 /* SyViewController.m */; };
+		FEA6A38F21001D45004A3221 /* BgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A38E21001D45004A3221 /* BgViewController.m */; };
+		FEA6A39221001D55004A3221 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A39121001D55004A3221 /* SettingViewController.m */; };
+		FEA6A39B21001F62004A3221 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A39A21001F62004A3221 /* NewsTableViewController.m */; };
+		FEA6A39E21001F76004A3221 /* QuestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A39D21001F76004A3221 /* QuestionTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		166693135B375F0124AD0F2B /* Pods-SwipableTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipableTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwipableTableView/Pods-SwipableTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		C1A23A1A20A8712DDA161E4B /* libPods-SwipableTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipableTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C593C0D6DEFD0809868198 /* Pods-SwipableTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipableTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwipableTableView/Pods-SwipableTableView.release.xcconfig"; sourceTree = "<group>"; };
 		FEA6A35320FF1CE2004A3221 /* SwipableTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipableTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA6A35620FF1CE2004A3221 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEA6A35720FF1CE3004A3221 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FEA6A35920FF1CE3004A3221 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FEA6A35A20FF1CE3004A3221 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FEA6A35D20FF1CE3004A3221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEA6A35F20FF1CF2004A3221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA6A36220FF1CF2004A3221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEA6A36420FF1CF2004A3221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEA6A36520FF1CF2004A3221 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEA6A36D20FF21C6004A3221 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FEA6A36E20FF21C6004A3221 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FEA6A37720FF2C2D004A3221 /* ZKTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKTabBarController.h; sourceTree = "<group>"; };
+		FEA6A37820FF2C2D004A3221 /* ZKTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKTabBarController.m; sourceTree = "<group>"; };
+		FEA6A37A20FF2CA5004A3221 /* ZKSideLeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKSideLeftViewController.h; sourceTree = "<group>"; };
+		FEA6A37B20FF2CA5004A3221 /* ZKSideLeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKSideLeftViewController.m; sourceTree = "<group>"; };
+		FEA6A37D20FF33BC004A3221 /* HorizonalTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizonalTableViewController.h; sourceTree = "<group>"; };
+		FEA6A37E20FF33BC004A3221 /* HorizonalTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizonalTableViewController.m; sourceTree = "<group>"; };
+		FEA6A38020FF33D5004A3221 /* TitleBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleBarView.h; sourceTree = "<group>"; };
+		FEA6A38120FF33D5004A3221 /* TitleBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleBarView.m; sourceTree = "<group>"; };
+		FEA6A38320FF33F7004A3221 /* SwipableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipableViewController.h; sourceTree = "<group>"; };
+		FEA6A38420FF33F7004A3221 /* SwipableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipableViewController.m; sourceTree = "<group>"; };
+		FEA6A38720FF36CE004A3221 /* UIColor+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		FEA6A38820FF36CE004A3221 /* UIColor+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		FEA6A38A21001D2E004A3221 /* SyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyViewController.h; sourceTree = "<group>"; };
+		FEA6A38B21001D2E004A3221 /* SyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyViewController.m; sourceTree = "<group>"; };
+		FEA6A38D21001D45004A3221 /* BgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BgViewController.h; sourceTree = "<group>"; };
+		FEA6A38E21001D45004A3221 /* BgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BgViewController.m; sourceTree = "<group>"; };
+		FEA6A39021001D55004A3221 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		FEA6A39121001D55004A3221 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		FEA6A39921001F62004A3221 /* NewsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		FEA6A39A21001F62004A3221 /* NewsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		FEA6A39C21001F76004A3221 /* QuestionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionTableViewController.h; sourceTree = "<group>"; };
+		FEA6A39D21001F76004A3221 /* QuestionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +70,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374173BFE036CAFB1E1F8256 /* libPods-SwipableTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B2F2B66EB4CEAB9329D80F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				166693135B375F0124AD0F2B /* Pods-SwipableTableView.debug.xcconfig */,
+				D1C593C0D6DEFD0809868198 /* Pods-SwipableTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA53710239CFD65029E0D739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1A23A1A20A8712DDA161E4B /* libPods-SwipableTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEA6A34A20FF1CE2004A3221 = {
 			isa = PBXGroup;
 			children = (
 				FEA6A35520FF1CE2004A3221 /* SwipableTableView */,
 				FEA6A35420FF1CE2004A3221 /* Products */,
+				1B2F2B66EB4CEAB9329D80F5 /* Pods */,
+				BA53710239CFD65029E0D739 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +115,63 @@
 		FEA6A35520FF1CE2004A3221 /* SwipableTableView */ = {
 			isa = PBXGroup;
 			children = (
+				FEA6A38620FF368E004A3221 /* categorys */,
+				FEA6A37020FF2B10004A3221 /* MainViewController */,
+				FEA6A36C20FF1DF2004A3221 /* 滑动tableView */,
 				FEA6A35620FF1CE2004A3221 /* AppDelegate.h */,
 				FEA6A35720FF1CE3004A3221 /* AppDelegate.m */,
-				FEA6A35920FF1CE3004A3221 /* ViewController.h */,
-				FEA6A35A20FF1CE3004A3221 /* ViewController.m */,
 				FEA6A35C20FF1CE3004A3221 /* Main.storyboard */,
 				FEA6A35F20FF1CF2004A3221 /* Assets.xcassets */,
 				FEA6A36120FF1CF2004A3221 /* LaunchScreen.storyboard */,
 				FEA6A36420FF1CF2004A3221 /* Info.plist */,
 				FEA6A36520FF1CF2004A3221 /* main.m */,
+				FEA6A36D20FF21C6004A3221 /* RootViewController.h */,
+				FEA6A36E20FF21C6004A3221 /* RootViewController.m */,
 			);
 			path = SwipableTableView;
+			sourceTree = "<group>";
+		};
+		FEA6A36C20FF1DF2004A3221 /* 滑动tableView */ = {
+			isa = PBXGroup;
+			children = (
+				FEA6A37D20FF33BC004A3221 /* HorizonalTableViewController.h */,
+				FEA6A37E20FF33BC004A3221 /* HorizonalTableViewController.m */,
+				FEA6A38020FF33D5004A3221 /* TitleBarView.h */,
+				FEA6A38120FF33D5004A3221 /* TitleBarView.m */,
+				FEA6A38320FF33F7004A3221 /* SwipableViewController.h */,
+				FEA6A38420FF33F7004A3221 /* SwipableViewController.m */,
+			);
+			path = "滑动tableView";
+			sourceTree = "<group>";
+		};
+		FEA6A37020FF2B10004A3221 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FEA6A37720FF2C2D004A3221 /* ZKTabBarController.h */,
+				FEA6A37820FF2C2D004A3221 /* ZKTabBarController.m */,
+				FEA6A37A20FF2CA5004A3221 /* ZKSideLeftViewController.h */,
+				FEA6A37B20FF2CA5004A3221 /* ZKSideLeftViewController.m */,
+				FEA6A38A21001D2E004A3221 /* SyViewController.h */,
+				FEA6A38B21001D2E004A3221 /* SyViewController.m */,
+				FEA6A38D21001D45004A3221 /* BgViewController.h */,
+				FEA6A38E21001D45004A3221 /* BgViewController.m */,
+				FEA6A39021001D55004A3221 /* SettingViewController.h */,
+				FEA6A39121001D55004A3221 /* SettingViewController.m */,
+				FEA6A39921001F62004A3221 /* NewsTableViewController.h */,
+				FEA6A39A21001F62004A3221 /* NewsTableViewController.m */,
+				FEA6A39C21001F76004A3221 /* QuestionTableViewController.h */,
+				FEA6A39D21001F76004A3221 /* QuestionTableViewController.m */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		FEA6A38620FF368E004A3221 /* categorys */ = {
+			isa = PBXGroup;
+			children = (
+				FEA6A38720FF36CE004A3221 /* UIColor+Util.h */,
+				FEA6A38820FF36CE004A3221 /* UIColor+Util.m */,
+			);
+			path = categorys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEA6A36920FF1CF2004A3221 /* Build configuration list for PBXNativeTarget "SwipableTableView" */;
 			buildPhases = (
+				60188682F7A8F62F3E11D51D /* [CP] Check Pods Manifest.lock */,
 				FEA6A34F20FF1CE2004A3221 /* Sources */,
 				FEA6A35020FF1CE2004A3221 /* Frameworks */,
 				FEA6A35120FF1CE2004A3221 /* Resources */,
@@ -135,14 +239,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60188682F7A8F62F3E11D51D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwipableTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FEA6A34F20FF1CE2004A3221 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA6A35B20FF1CE3004A3221 /* ViewController.m in Sources */,
+				FEA6A37C20FF2CA5004A3221 /* ZKSideLeftViewController.m in Sources */,
+				FEA6A38520FF33F7004A3221 /* SwipableViewController.m in Sources */,
+				FEA6A37920FF2C2D004A3221 /* ZKTabBarController.m in Sources */,
+				FEA6A39E21001F76004A3221 /* QuestionTableViewController.m in Sources */,
+				FEA6A37F20FF33BC004A3221 /* HorizonalTableViewController.m in Sources */,
+				FEA6A38920FF36CE004A3221 /* UIColor+Util.m in Sources */,
 				FEA6A36620FF1CF2004A3221 /* main.m in Sources */,
+				FEA6A38C21001D2E004A3221 /* SyViewController.m in Sources */,
+				FEA6A38F21001D45004A3221 /* BgViewController.m in Sources */,
+				FEA6A39B21001F62004A3221 /* NewsTableViewController.m in Sources */,
 				FEA6A35820FF1CE3004A3221 /* AppDelegate.m in Sources */,
+				FEA6A38220FF33D5004A3221 /* TitleBarView.m in Sources */,
+				FEA6A36F20FF21C6004A3221 /* RootViewController.m in Sources */,
+				FEA6A39221001D55004A3221 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +416,13 @@
 		};
 		FEA6A36A20FF1CF2004A3221 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166693135B375F0124AD0F2B /* Pods-SwipableTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PK38W46T76;
 				INFOPLIST_FILE = SwipableTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,10 +435,13 @@
 		};
 		FEA6A36B20FF1CF2004A3221 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C593C0D6DEFD0809868198 /* Pods-SwipableTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PK38W46T76;
 				INFOPLIST_FILE = SwipableTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
