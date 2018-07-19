@@ -25,6 +25,7 @@
 		FEA6A39221001D55004A3221 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A39121001D55004A3221 /* SettingViewController.m */; };
 		FEA6A39B21001F62004A3221 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A39A21001F62004A3221 /* NewsTableViewController.m */; };
 		FEA6A39E21001F76004A3221 /* QuestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA6A39D21001F76004A3221 /* QuestionTableViewController.m */; };
+		FEA6A3A021008779004A3221 /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = FEA6A39F21008779004A3221 /* ReadMe */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		FEA6A39A21001F62004A3221 /* NewsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		FEA6A39C21001F76004A3221 /* QuestionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionTableViewController.h; sourceTree = "<group>"; };
 		FEA6A39D21001F76004A3221 /* QuestionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionTableViewController.m; sourceTree = "<group>"; };
+		FEA6A39F21008779004A3221 /* ReadMe */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				FEA6A36520FF1CF2004A3221 /* main.m */,
 				FEA6A36D20FF21C6004A3221 /* RootViewController.h */,
 				FEA6A36E20FF21C6004A3221 /* RootViewController.m */,
+				FEA6A39F21008779004A3221 /* ReadMe */,
 			);
 			path = SwipableTableView;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA6A3A021008779004A3221 /* ReadMe in Resources */,
 				FEA6A36320FF1CF2004A3221 /* LaunchScreen.storyboard in Resources */,
 				FEA6A36020FF1CF2004A3221 /* Assets.xcassets in Resources */,
 				FEA6A35E20FF1CE3004A3221 /* Main.storyboard in Resources */,
