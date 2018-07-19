@@ -11,7 +11,7 @@
 @interface AppDelegate ()
 
 @end
-
+//都是用storboard操作
 //根控制器是rootViewController 继承REsidemenu
 @implementation AppDelegate
 
